@@ -1,3 +1,22 @@
+function validateForm() {
+  let x = document.forms["myForm"]["uname"]["upass"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+function validate() {
+  let x = document.forms["myForm1"]["uemail"].value;
+  if (x == "") {
+    alert("Please enter your email id");
+    return false;
+  }
+}
+
+
+
+
 searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{

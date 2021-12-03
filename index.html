@@ -66,14 +66,14 @@
 
 <div class="login-form-container">
 
-    <div id="close-login-btn" class="fas fa-times"></div>
+    <div id="close-login-btn" class="fas fa-times"></div> 
 
-    <form action="">
+    <form name="myForm" onsubmit="return validateForm()" method="post">
         <h3>sign in</h3>
         <span>username</span>
-        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <input type="text" name="uname" class="box" placeholder="enter your username" id="">
         <span>password</span>
-        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <input type="password" name="upass" class="box" placeholder="enter your password" id="">
         <div class="checkbox">
             <input type="checkbox" name="" id="remember-me">
             <label for="remember-me"> remember me</label>
@@ -340,10 +340,10 @@
 
 <section class="newsletter">
 
-    <form action="">
+    <form action="" name="myForm1" onsubmit="return validate()">
         <h3>subscribe for latest updates</h3>
-        <input type="email" name="" placeholder="enter your email" id="" class="box">
-        <input type="submit" value="subscribe" class="btn">
+        <input type="email" name="uemail" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="submit" class="btn">
     </form>
 
 </section>
